@@ -4,13 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd1088f-dbbf-4b6e-a163-9347fb2679eb" name="Changes" comment="Implemented Specular lightning">
-      <change afterPath="$PROJECT_DIR$/res/cube.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/cube.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderEngine/MasterRenderer.java" afterDir="false" />
+    <list default="true" id="cfd1088f-dbbf-4b6e-a163-9347fb2679eb" name="Changes" comment="Implemented batch renderering">
+      <change afterPath="$PROJECT_DIR$/res/grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/grass2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tree.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderEngine/TerrainRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shaders/TerrainShader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shaders/terrainFragmentShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shaders/terrainVertexShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/terrains/Terrain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/toolbox/Logger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderEngine/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Light.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Light.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/TexturedModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/TexturedModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderEngine/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/DisplayManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderEngine/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderEngine/MasterRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/MasterRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderEngine/OBJLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/OBJLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderEngine/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/EntityRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shaders/ShaderProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/ShaderProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shaders/StaticShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/StaticShader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shaders/fragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/fragmentShader.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shaders/vertexShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/vertexShader.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/ModelTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/ModelTexture.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,12 +112,20 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1718813596085</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Implemented batch renderering">
+      <option name="closed" value="true" />
+      <created>1718815638091</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1718815638091</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Implemented Specular lightning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Specular lightning" />
+    <MESSAGE value="Implemented batch renderering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented batch renderering" />
   </component>
 </project>
