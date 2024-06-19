@@ -7,6 +7,7 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.PixelFormat;
+import toolbox.Logger;
 
 public class DisplayManager {
 	
@@ -32,12 +33,20 @@ public class DisplayManager {
 	}
 	
 	public static void updateDisplay() throws LWJGLException {
-		
+
+		if(Keyboard.isKeyDown(Keyboard.KEY_F11)) {
+			FULLSCREEN =! FULLSCREEN;
+			Logger.info("DisplayManager", "Toggled Fullscreen value is " + FULLSCREEN);
+		}
+
+        Display.setFullscreen(FULLSCREEN);
 		Display.sync(FPS_CAP);
 		Display.update();
 
 
 	}
+
+
 	
 	public static void closeDisplay(){
 		

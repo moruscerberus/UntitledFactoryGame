@@ -8,7 +8,6 @@ import models.RawModel;
 import models.TexturedModel;
 
 import org.lwjgl.LWJGLException;
-import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.util.vector.Vector3f;
 
@@ -31,16 +30,34 @@ public class MainGameLoop {
 		Loader loader = new Loader();
 		
 		
-		RawModel model = OBJLoader.loadObjModel("tree", loader);
+		RawModel model = OBJLoader.loadObjModel("tree", loader);;
 		
 		TexturedModel staticModel = new TexturedModel(model,new ModelTexture(loader.loadTexture("tree")));
-		
+
+		TexturedModel fern = new TexturedModel(OBJLoader.loadObjModel("fern", loader), new ModelTexture(loader.loadTexture("fern")));
+		fern.getTexture().setHasTransparency();
+		fern.getTexture().setUseFakeLighting(true);
+
+		TexturedModel ironbar = new TexturedModel(OBJLoader.loadObjModel("ironbar", loader), new ModelTexture(loader.loadTexture("ironbar")));
+		ironbar.getTexture().setReflectivity(.5f);
+		ironbar.getTexture().setShineDamper(0.2f);
+		ironbar.getTexture().setUseFakeLighting(false);
+
 		List<Entity> entities = new ArrayList<Entity>();
 		Random random = new Random();
 		for(int i = 0; i < 500; i++){
 			entities.add(new Entity(staticModel, new Vector3f(random.nextFloat() * 1200 - 400,0,random.nextFloat() * +600),0,0,0,3));
 		}
-		
+		for(int i = 0; i < 50; i++){
+			entities.add(new Entity(fern, new Vector3f(random.nextFloat() * 1200 - 400,0,random.nextFloat() * +600),0,0,0,1));
+		}
+		for(int i = 0; i < 50; i++){
+			entities.add(new Entity(ironbar, new Vector3f(random.nextFloat() * 1200 - 400,0,random.nextFloat() * +600),0,0,0,1));
+		}
+
+
+
+
 		Light light = new Light(new Vector3f(20000,20000,2000),new Vector3f(1,1,1));
 		
 		Terrain terrain = new Terrain(0,0,loader,new ModelTexture(loader.loadTexture("grass2")));
@@ -53,7 +70,7 @@ public class MainGameLoop {
 		while(!Display.isCloseRequested()){
 			camera.move();
 
-			
+
 			renderer.processTerrain(terrain);
 			// renderer.processTerrain(terrain2);
 			for(Entity entity:entities){
