@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd1088f-dbbf-4b6e-a163-9347fb2679eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/res/dragon.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/ironbar.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/ironbar.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/ironbar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Light.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="cfd1088f-dbbf-4b6e-a163-9347fb2679eb" name="Changes" comment="Implemented Specular lightning">
+      <change afterPath="$PROJECT_DIR$/res/cube.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/cube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderEngine/MasterRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderEngine/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderEngine/OBJLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/OBJLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderEngine/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/StaticShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/StaticShader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/fragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/fragmentShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/vertexShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/vertexShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/textures/ModelTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/ModelTexture.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,9 +86,19 @@
       <option name="presentableId" value="Default" />
       <updated>1718482174209</updated>
     </task>
+    <task id="LOCAL−00001" summary="Implemented Specular lightning">
+      <option name="closed" value="true" />
+      <created>1718813596085</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1718813596085</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Implemented Specular lightning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Specular lightning" />
   </component>
 </project>
