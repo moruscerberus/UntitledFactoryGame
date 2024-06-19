@@ -1,5 +1,6 @@
 package engineTester;
 
+import entities.Light;
 import models.RawModel;
 import models.TexturedModel;
 
@@ -24,19 +25,24 @@ public class MainGameLoop {
 		StaticShader shader = new StaticShader();
 		Renderer renderer = new Renderer(shader);
 
-		RawModel model = OBJLoader.loadObjModel("agera", loader);
+		RawModel model = OBJLoader.loadObjModel("dragon", loader);
 
 		TexturedModel staticModel = new TexturedModel(model,new ModelTexture(loader.loadTexture("no_texture")));
+		ModelTexture texture = staticModel.getTexture();
+		texture.setShineDamper(10);
+		texture.setReflectivity(1);
 		
-		Entity entity = new Entity(staticModel, new Vector3f(0,-20,-50),0,0,0,5);
+		Entity entity = new Entity(staticModel, new Vector3f(0,0,-25),0,0,0,1);
+		Light light = new Light(new Vector3f(0, 0, -20), new Vector3f(1, 1, 1));
 		
 		Camera camera = new Camera();
 		
 		while(!Display.isCloseRequested()){
-			entity.increaseRotation(0, 0, 0);
+			entity.increaseRotation(0, 1, 0);
 			camera.move();
 			renderer.prepare();
 			shader.start();
+			shader.loadLight(light);
 			shader.loadViewMatrix(camera);
 			renderer.render(entity,shader);
 			shader.stop();
