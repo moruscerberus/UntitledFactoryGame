@@ -50,7 +50,7 @@ public class MainGameLoop {
 		fern.getTexture().setHasTransparency();
 		fern.getTexture().setUseFakeLighting(true);
 
-		TexturedModel ironbar = new TexturedModel(OBJLoader.loadObjModel("ironbar", loader), new ModelTexture(loader.loadTexture("ironbar")));
+		TexturedModel ironbar = new TexturedModel(OBJLoader.loadObjModel("gear", loader), new ModelTexture(loader.loadTexture("ironbar")));
 		ironbar.getTexture().setReflectivity(.5f);
 		ironbar.getTexture().setShineDamper(0.5f);
 		ironbar.getTexture().setUseFakeLighting(false);

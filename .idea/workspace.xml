@@ -4,36 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd1088f-dbbf-4b6e-a163-9347fb2679eb" name="Changes" comment="Implemented Transparency">
-      <change afterPath="$PROJECT_DIR$/res/BuildMenu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/blendMap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/coin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/grass3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/grass5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/testGUI.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tree2.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tree2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tree2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/version.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/void.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/water.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/GuiRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/GuiShader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/GuiTexture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/guiFragmentShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/guiVertexShader.txt" afterDir="false" />
+    <list default="true" id="cfd1088f-dbbf-4b6e-a163-9347fb2679eb" name="Changes" comment="Implemented GUIs">
+      <change afterPath="$PROJECT_DIR$/res/gear.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/gear.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/grass.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/grass.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/grass2.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/grass2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engineTester/MainGameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderEngine/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderEngine/MasterRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderEngine/MasterRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/StaticShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/StaticShader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/TerrainShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/TerrainShader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shaders/fragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/fragmentShader.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shaders/vertexShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/vertexShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toolbox/Maths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/toolbox/Maths.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +127,14 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1718824055337</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Implemented GUIs">
+      <option name="closed" value="true" />
+      <created>1719245316922</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1719245316922</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -158,6 +143,7 @@
     <MESSAGE value="Implemented batch renderering" />
     <MESSAGE value="Implemented Terrain" />
     <MESSAGE value="Implemented Transparency" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Transparency" />
+    <MESSAGE value="Implemented GUIs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented GUIs" />
   </component>
 </project>
